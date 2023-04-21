@@ -1,9 +1,6 @@
 # [Weekly Report](https://weeklyreport.avemaria.fun/)
 
-
 This project generate weekly report with simple sentence for you using AI.
-
-[![Weekly Report](./public/screenshot.jpg)](https://weeklyreport.avemaria.fun/zh)
 
 ## How it works
 
@@ -34,12 +31,13 @@ docker run -d -p 3000:3000 --name weekly_report-docker -e OPENAI_API_KEY=sk-xxxx
 ```
 
 docker-compose.yml
+
 ```yaml
 services:
   weekly_report-docker:
     container_name: weekly_report-docker
     ports:
-      - '3000:3000'
+      - "3000:3000"
     image: ihxrainbow/weekly_report-docker
     environment:
       # API key
@@ -51,5 +49,3 @@ services:
 ## Credits
 
 Inspired by [TwtterBio](https://github.com/Nutlope/twitterbio) and [zhengbangbo](https://github.com/zhengbangbo/chat-simplifier).
-
-
