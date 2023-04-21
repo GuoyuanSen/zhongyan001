@@ -10,10 +10,10 @@ export default function Header() {
   const otherLocale = locales?.find((cur) => cur !== locale);
 
   return (
-    <header className="flex justify-between items-center w-full mt-5 border-b-2 pb-7 sm:px-4 px-2">
+    <header className="flex justify-between items-center w-full mt-5 border-b-2 pb-5 sm:px-4 px-2">
       <div style={{ display: "flex", alignItems: "baseline" }}>
         <h1
-          style={{ color: "steelblue", fontWeight: "bold", fontSize: "55px" }}
+          style={{ color: "steelblue", fontWeight: "bold", fontSize: "38px" }}
         >
           众言
         </h1>

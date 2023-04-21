@@ -101,13 +101,13 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
-        <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
+      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-1 sm:mt-1">
+        <h1 className="sm:text-5xl text-3xl max-w-2xl font-bold text-slate-900">
           {t("description1")} <br></br>
-          <div className=" px-4 py-2 sm:mt-3 mt-8  w-full"></div>
+          <div className=" px-4 py-2 sm:mt-2 mt-6  w-full"></div>
           {t("description2")}
         </h1>
-        <p className="text-slate-500 mt-5">{t("slogan")}</p>
+        <p className="text-slate-500 mt-2.5">{t("slogan")}</p>
 
         <div className="max-w-xl w-full">
           {useUserKey && (
@@ -196,7 +196,7 @@ const Home: NextPage = () => {
         <hr className="h-px bg-gray-700 border-1 dark:bg-gray-700" />
         <ResizablePanel>
           <AnimatePresence mode="wait">
-            <motion.div className="space-y-10 my-10">
+            <motion.div className="space-y-10">
               {generatedChat && (
                 <>
                   <div>
